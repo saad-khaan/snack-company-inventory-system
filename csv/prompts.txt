@@ -1,0 +1,50 @@
+Used Gemini 3.6 flash for the following prompts to generate the csv files:
+
+--suppliers.csv prompt:
+Generate data for a dummy database in csv format following the conditions in the brackets, and with realistic varied data. This is for a snack company inventory system. There will be 25 suppliers, 200 users, 200 products, 500 transactions, and 10 employees. Additionally, a contains table needs to exist for the transactions that will have on average around 2 products per transaction.
+Generate the data for the 25 suppliers with these attributes:
+SupplierID (int) [primary key]
+SupplierName (varchar(100))
+SupplierAddress (varchar(255))
+SupplierEmail (varchar(255)) [valid email, x@y.z]
+SupplierPhone (varchar(30))
+SupplierLocation (varchar(100))
+
+--users.csv prompt:
+Generate the data for the 200 users with these attributes:
+UserEmail (varchar(255)) [valid email, x@y.z, primary key]
+UserPoints (int) [>= 0, number of loyalty points the user has]
+UserName (varchar(100))
+
+--employees.csv prompt:
+Generate the data for the 10 employees with these attributes:
+EmployeeID (int) [primary key]
+EmployeeName (varchar(100))
+
+--products.csv prompt:
+Generate the data for the 200 products with these attributes:
+ProductID (int) [primary key]
+ProductName (varchar(100))
+SupplierID (int) [foreign key references Suppliers(SupplierID)]
+InStock (boolean)
+SellPrice (int, NOTE: cents eg. $15.75 = 1575 cents) [>= 0]
+MinAmount (int) [> 0]
+SupplyPrice (int, NOTE: cents) [>= 0]
+InventoryAmount (int) [>= 0]
+IsSeasonal (boolean)
+
+--transactions.csv prompt:
+Generate the data for the 500 transactions with these attributes:
+TransactionID (int) [primary key]
+TransactionDate (date) [must be after company creation 2026/07/13]
+UserEmail (varchar(255)) [valid email, x@y.z, foreign key references Users(UserEmail)]
+UserBillingInfo (varchar(255))
+UserAddress (varchar(255))
+ProcessedBy (int) [foreign key references Employees(EmployeeID)]
+
+--contains.csv prompt:
+Generate the full csv data for the contains table (about 2-3 products per transaction on average (around 1000-1500 rows total since there are 500 transactions) with a lot of variance: some large orders, many small orders) with these attributes:
+[TransactionID and ProductID is the primary key]
+TransactionID (int) [foreign key references Transactions(TransactionID)]
+ProductID (int) [foreign key references Products(ProductID)]
+Quantity (int) [> 0] 

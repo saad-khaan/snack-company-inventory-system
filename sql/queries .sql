@@ -200,3 +200,72 @@ VALUES (999999, 101, 1);
 -- 8d: DELETE a user who still has transactions.
 -- Fails: Transactions rows still reference this UserEmail.
 DELETE FROM Users WHERE UserEmail = 'user1@example.com';
+
+
+/* =========================================================
+   QUERY 9: What products have not been sold at all in the last week?
+   Business question: which products are not being bought (not in inventory / not enough demand at current price)?
+   Techniques: subquery and join used to determine non-existence
+   ========================================================= */
+-- 9a: Using subquery (needs to not exist in the subquery)
+SELECT
+	p.ProductID,
+	p.ProductName FROM Products p
+WHERE NOT EXISTS (
+	SELECT *
+	FROM Contains c
+	JOIN Transactions t ON c.TransactionID = t.TransactionID
+	WHERE c.ProductID = p.ProductID AND t.TransactionDate >= ‘2026-07-26’
+);
+
+-- 9b: Using join (check if TransactionID is null to see if transaction exists)
+SELECT
+	p.ProductID,
+	p.ProductName FROM Products p
+LEFT JOIN Contains c ON p.ProductID = c.ProductID
+LEFT JOIN Transactions t ON c.TransactionID = t.TransactionID AND t.TransactionDate >= ‘2026-07-26’ WHERE t.TransactionID IS NULL;
+
+
+/* =========================================================
+   QUERY 10: Largest transaction that an employee processed (employee id 5 used here)
+   Business question: see notable transaction that an employee was involved in
+   Techniques: multiple joins, group by transaction to calculate the transaction total from contains and products tables
+   ========================================================= */
+SELECT
+t.TransactionID,
+t.TransactionDate,
+SUM(c.Quantity * p.SellPrice) AS transaction_total
+FROM Transactions t
+JOIN Contains c ON t.TransactionID = c.TransactionID
+JOIN Products p ON c.ProductID = p.ProductID WHERE t.EmployeeID = 5
+GROUP BY t.TransactionId ORDER BY transaction_total DESC LIMIT 1;
+
+
+/* =========================================================
+   QUERY 11: Most popular product (greatest count in transactions)
+   Business question: Which product is bought the most
+   Techniques: subquery that depends on an aggregation
+               (inner query computes per-product totals, then averages them)
+   ========================================================= */
+SELECT
+    p.ProductID,
+    p.ProductName,
+    COUNT(*) AS num_transactions
+FROM Products p
+JOIN Contains c ON p.ProductID = c.ProductID
+GROUP BY p.ProductID ORDER BY num_transactions DESC LIMIT 1;
+
+
+/* =========================================================
+   QUERY 12: Highest inventory product per supplier
+   Business question: How is our inventory being used the most by each supplier?
+   Techniques: subquery that depends on an aggregation
+               (inner query computes maximum inventory amount, outer query gets the product information)
+   ========================================================= */
+SELECT
+	s.SupplierName,
+	p.ProductName,
+	p.InventoryAmount
+FROM Suppliers s
+JOIN Products p ON s.SupplierID = p.SupplierID
+WHERE p.InventoryAmount = (SELECT MAX(p2.InventoryAmount) FROM Products p2 WHERE p2.SupplierID = p.SupplierID );

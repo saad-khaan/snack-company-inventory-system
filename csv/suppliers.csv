@@ -1,0 +1,26 @@
+SupplierID,SupplierName,SupplierAddress,SupplierEmail,SupplierPhone,SupplierLocation
+1,Apex Grain Milling Co.,1048 Industrial Pkwy,orders@apexgrainmilling.com,+1-312-555-0147,Chicago IL
+2,Golden Valley Nut Co.,452 Agriculture Way,sales@goldenvalleynut.com,+1-559-555-0182,Fresno CA
+3,Sunshine Oils & Fats Inc.,88 North River Rd,info@sunshineoils.com,+1-214-555-0119,Dallas TX
+4,FlavorCraft Seasonings,310 Innovation Blvd,contact@flavorcraft.com,+1-317-555-0193,Indianapolis IN
+5,PacPro Packaging Solutions,702 Logistics Way,supply@pacpropack.com,+1-404-555-0164,Atlanta GA
+6,Prairie Farms Corn Products,12 Riverbed Rd,orders@prairiefarmscorn.com,+1-515-555-0131,Des Moines IA
+7,PureCane Sugar Refineries,904 Harbor View Dr,sales@purecanesugar.com,+1-504-555-0175,New Orleans LA
+8,Alpine Dairy Powders,55 Mountain View Rd,contact@alpinedairy.com,+1-608-555-0128,Madison WI
+9,Coastal Sea Salt Co.,101 Ocean Ave Suite 4,orders@coastalseasalt.com,+1-206-555-0153,Seattle WA
+10,BioSweet Natural Sweeteners,602 Organic Way,support@biosweet.com,+1-303-555-0188,Boulder CO
+11,Midwest Potato Growers Co-op,230 Farm-to-Market Rd,sales@midwestpotatocoop.com,+1-218-555-0104,Fargo ND
+12,ChocoCraft Cocoa Importers,78 Port Commerce Dr,orders@chococraftcocoa.com,+1-201-555-0192,Jersey City NJ
+13,Savoury Spice Extractors,411 Flavor Tech Way,info@savouryspiceex.com,+1-513-555-0167,Cincinnati OH
+14,EcoFilms Flexible Packaging,89 Eco Industrial Park,sales@ecofilms.com,+1-503-555-0142,Portland OR
+15,SunHarvest Dried Fruits,12 West Citrus Ave,orders@sunharvestfruit.com,+1-602-555-0111,Phoenix AZ
+16,Great Plains Bakery Ingredients,650 Grain Exchange Bldg,contact@greatplainsbakery.com,+1-402-555-0139,Omaha NE
+17,Highland Starch & Flour Mills,33 Mill Race Rd,supply@highlandstarch.com,+1-612-555-0185,Minneapolis MN
+18,Pacific Rim Sesame & Seeds,150 Shipping Channel Way,orders@pacificrimseeds.com,+1-415-555-0123,San Francisco CA
+19,Delta Yeast & Enzymes,51 Riverbend Pkwy,sales@deltayeast.com,+1-901-555-0176,Memphis TN
+20,Heritage Honey & Syrups,888 Hive Lane,contact@heritagehoneysyrups.com,+1-717-555-0158,Lancaster PA
+21,ClearFlow Processing Aids,304 Chemical Way,support@clearflowaids.com,+1-713-555-0134,Houston TX
+22,North American Carton & Box,1200 Paper Mill Rd,orders@nacartonbox.com,+1-313-555-0199,Detroit MI
+23,TriState Cheese & Whey,45 Creamery Rd,sales@tristatecheesewhey.com,+1-315-555-0161,Syracuse NY
+24,Brimstone Chili & Pepper Supply,707 Cactus Ridge Rd,orders@brimstonepepper.com,+1-505-555-0148,Albuquerque NM
+25,Global Dried Herbs & Spices,520 Trade Zone Blvd,contact@globalherbspice.com,+1-786-555-0102,Miami FL

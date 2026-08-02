@@ -45,7 +45,7 @@ SELECT
     s.SupplierName,
     COUNT(p.ProductID) AS NumProducts
 FROM Suppliers s
-JOIN Products p ON p.SupplierId = s.SupplierID
+JOIN Products p ON p.SupplierID = s.SupplierID
 GROUP BY s.SupplierID, s.SupplierName
 HAVING COUNT(p.ProductID) > 5      -- TUNE: raise this once we have 200 products / 25 suppliers
 ORDER BY NumProducts DESC;
@@ -100,7 +100,7 @@ SELECT
     p.MinAmount,
     (p.MinAmount - p.InventoryAmount) AS UnitsToReorder
 FROM Products p
-JOIN Suppliers s ON p.SupplierId = s.SupplierID
+JOIN Suppliers s ON p.SupplierID = s.SupplierID
 WHERE p.InventoryAmount <= p.MinAmount
 ORDER BY UnitsToReorder DESC;
 
@@ -184,8 +184,8 @@ ORDER BY TotalSold DESC;
    ========================================================= */
 
 -- 8a: INSERT a product whose supplier does not exist.
--- Fails: SupplierId has no matching row in Suppliers.
-INSERT INTO Products (ProductID, ProductName, SupplierId, InStock, SellPrice, MinAmount, SupplyPrice, InventoryAmount, IsSeasonal)
+-- Fails: SupplierID has no matching row in Suppliers.
+INSERT INTO Products (ProductID, ProductName, SupplierID, InStock, SellPrice, MinAmount, SupplyPrice, InventoryAmount, IsSeasonal)
 VALUES (9999, 'Ghost Chips', 99999, TRUE, 399, 10, 200, 50, FALSE);
 
 -- 8b: DELETE a supplier that still supplies products.
@@ -209,19 +209,19 @@ DELETE FROM Users WHERE UserEmail = 'user1@example.com';
    ========================================================= */
 -- 9a: Using subquery (needs to not exist in the subquery)
 SELECT
-	p.ProductID,
-	p.ProductName FROM Products p
+    p.ProductID,
+    p.ProductName FROM Products p
 WHERE NOT EXISTS (
-	SELECT *
-	FROM Contains c
-	JOIN Transactions t ON c.TransactionID = t.TransactionID
-	WHERE c.ProductID = p.ProductID AND t.TransactionDate >= ‘2026-07-26’
+    SELECT *
+    FROM Contains c
+    JOIN Transactions t ON c.TransactionID = t.TransactionID
+    WHERE c.ProductID = p.ProductID AND t.TransactionDate >= ‘2026-07-26’
 );
 
 -- 9b: Using join (check if TransactionID is null to see if transaction exists)
 SELECT
-	p.ProductID,
-	p.ProductName FROM Products p
+    p.ProductID,
+    p.ProductName FROM Products p
 LEFT JOIN Contains c ON p.ProductID = c.ProductID
 LEFT JOIN Transactions t ON c.TransactionID = t.TransactionID AND t.TransactionDate >= ‘2026-07-26’ WHERE t.TransactionID IS NULL;
 
@@ -263,9 +263,9 @@ GROUP BY p.ProductID ORDER BY num_transactions DESC LIMIT 1;
                (inner query computes maximum inventory amount, outer query gets the product information)
    ========================================================= */
 SELECT
-	s.SupplierName,
-	p.ProductName,
-	p.InventoryAmount
+    s.SupplierName,
+    p.ProductName,
+    p.InventoryAmount
 FROM Suppliers s
 JOIN Products p ON s.SupplierID = p.SupplierID
 WHERE p.InventoryAmount = (SELECT MAX(p2.InventoryAmount) FROM Products p2 WHERE p2.SupplierID = p.SupplierID );

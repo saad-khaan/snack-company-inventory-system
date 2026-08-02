@@ -42,7 +42,7 @@ CREATE TABLE Employees (
 CREATE TABLE Products (
     ProductID INT PRIMARY KEY, -- Unique id used to identify each product
     ProductName VARCHAR(100), -- Product name
-    SupplierId INT,
+    SupplierID INT,
 
     -- TRUE means product is in stock, FALSE means product is out of stock
     InStock BOOLEAN,
@@ -60,7 +60,7 @@ CREATE TABLE Products (
     CHECK (MinAmount > 0),
 
     -- Connect each product to an existing supplier
-    FOREIGN KEY (SupplierId)
+    FOREIGN KEY (SupplierID)
         REFERENCES Suppliers(SupplierID)
 );
 

@@ -1,0 +1,201 @@
+ProductID,ProductName,SupplierID,InStock,SellPrice,MinAmount,SupplyPrice,InventoryAmount,IsSeasonal
+1,Classic Salted Potato Chips 150g,11,true,349,20,180,145,false
+2,Kettle Cooked Jalapeno Chips 140g,11,true,399,15,210,88,false
+3,Smoky BBQ Potato Crisps 160g,11,true,349,20,180,210,false
+4,Sour Cream & Onion Rings 120g,1,true,299,25,140,65,false
+5,Sea Salt & Vinegar Potato Chips 150g,11,true,349,20,180,112,false
+6,Cheddar Cheese Pretzel Twists 200g,16,true,429,15,220,95,false
+7,Honey Mustard Pretzel Sticks 180g,16,true,399,15,200,54,false
+8,Original Salted Saltines 250g,16,true,249,30,110,310,false
+9,Multi-Seed Whole Grain Crackers 175g,18,true,479,12,250,42,false
+10,Garlic & Herb Breadsticks 150g,16,true,329,20,160,78,false
+11,Roasted Salted Almonds 200g,2,true,699,10,390,130,false
+12,Raw Organic Cashews 180g,2,true,749,10,420,85,false
+13,Honey Roasted Peanuts 250g,2,true,449,25,210,240,false
+14,Spicy Chili Lime Pistachios 150g,2,true,799,10,450,60,false
+15,Deluxe Mixed Nuts Unsalted 200g,2,true,849,8,480,45,false
+16,Dark Chocolate Almond Clusters 120g,12,true,599,12,320,72,false
+17,Milk Chocolate Hazelnut Bar 100g,12,true,399,20,200,180,false
+18,70% Dark Cocoa Bar 100g,12,true,429,20,210,125,false
+19,White Chocolate Raspberry Bites 110g,12,false,499,15,260,0,false
+20,Milk Chocolate Covered Pretzel Balls 150g,12,true,549,15,280,92,false
+21,Dried Mango Slices 150g,15,true,599,15,310,115,false
+22,Sweetened Dried Cranberries 200g,15,true,449,20,220,160,false
+23,Organic Freeze-Dried Strawberries 50g,15,true,649,10,350,38,false
+24,Chewy Dried Banana Chips 180g,15,true,329,25,150,205,false
+25,Medjool Dates Pitted 250g,15,true,699,12,380,50,false
+26,Nacho Cheese Tortilla Chips 200g,6,true,399,20,200,175,false
+27,Salsa Verde Tortilla Chips 200g,6,true,399,20,200,82,false
+28,Blue Corn Tortilla Rounds 225g,6,true,429,15,220,105,false
+29,Fiery Hot Crunchy Corn Sticks 150g,6,true,299,25,130,220,false
+30,White Cheddar Popcorn 120g,6,true,349,20,160,140,false
+31,Movie Theater Butter Popcorn 140g,6,true,329,25,150,195,false
+32,Sweet & Salty Kettle Corn 150g,6,true,349,20,160,110,false
+33,Caramel Glazed Popcorn 180g,6,true,449,15,220,68,false
+34,Chili Lime Rolled Tortilla Chips 140g,24,true,379,20,190,130,false
+35,Sriracha Chili Rice Crackers 100g,18,true,299,25,140,185,false
+36,Wasabi Green Peas 120g,18,true,319,20,150,95,false
+37,Teriyaki Sesame Sticks 150g,18,true,349,20,170,118,false
+38,Roasted Seaweed Snack Original 15g,9,true,199,30,85,340,false
+39,Roasted Seaweed Snack Wasabi 15g,9,true,199,30,85,210,false
+40,Salted Edamame Beans Crisp 90g,18,true,399,15,190,72,false
+41,Gummy Bears Assorted Fruit 200g,20,true,299,25,120,280,false
+42,Sour Worms Neon 180g,20,true,299,25,120,190,false
+43,Peach Rings Soft Candy 170g,20,true,319,20,130,145,false
+44,Licorice Twists Black 220g,20,true,279,25,110,160,false
+45,Red Strawberry Licorice 220g,20,true,279,25,110,230,false
+46,Cinnamon Hard Candies 150g,13,true,229,30,90,175,false
+47,Peppermint Hard Candies 150g,13,true,229,30,90,310,false
+48,Fruity Chewy Caramels 180g,20,true,349,20,150,88,false
+49,Dark Chocolate Sea Salt Caramel Bites 130g,12,true,549,12,270,64,false
+50,Milk Chocolate Peanut Butter Cups 150g,12,true,429,20,200,155,false
+51,Pumpkin Spice Pretzel Thins 150g,16,false,449,15,210,0,true
+52,Peppermint Bark Dark Chocolate 120g,12,false,599,10,290,0,true
+53,Eggnog Flavored Cookies 180g,16,false,399,15,180,0,true
+54,Summer Berry Granola Bar 160g,15,true,429,20,190,110,true
+55,Spring Honey Blossom Almond Mix 150g,2,true,649,12,320,45,true
+56,Autumn Apple Cinnamon Crisps 100g,15,true,479,15,220,62,true
+57,Spooky Monster Fudge Pops 140g,12,false,399,20,180,0,true
+58,Gingerbread Cookie Bites 160g,16,false,379,20,170,0,true
+59,Cranberry Orange Trail Mix 200g,15,true,549,15,260,85,true
+60,Maple Pecan Cluster Crunch 150g,2,true,699,10,340,40,true
+61,Original Beef Jerky 85g,25,true,799,15,410,120,false
+62,Teriyaki Beef Jerky 85g,25,true,799,15,410,95,false
+63,Peppered Beef Jerky 85g,25,true,799,15,410,80,false
+64,Sweet & Spicy Turkey Jerky 75g,25,true,829,12,430,55,false
+65,Smoky Bacon Strips Snack 60g,25,true,499,20,240,110,false
+66,Pork Rinds Original Crisp 100g,25,true,299,25,130,210,false
+67,Spicy BBQ Pork Rinds 100g,25,true,299,25,130,165,false
+68,Cheddar Baked Cheese Crisps 60g,23,true,449,15,220,90,false
+69,Parmesan Pepper Cheese Snack 60g,23,true,479,15,240,75,false
+70,Gouda Cheese Bites Crunchy 50g,23,true,499,12,250,60,false
+71,Oatmeal Raisin Chewy Cookies 200g,16,true,349,20,160,130,false
+72,Double Chocolate Chip Cookies 200g,16,true,379,20,180,180,false
+73,Vanilla Wafer Bites 180g,16,true,299,25,130,220,false
+74,Shortbread Butter Fingers 150g,16,true,429,15,210,85,false
+75,Fudge Striped Cookie Rings 220g,16,true,349,20,160,140,false
+76,Peanut Butter Sandwich Cookies 250g,16,true,399,20,190,165,false
+77,Lemon Zest Wafer Rolls 120g,16,true,329,20,150,90,false
+78,Marshmallow Chocolate Graham Snacks 160g,12,true,399,15,190,105,false
+79,Coconut Macaroon Bites 140g,16,true,479,12,230,50,false
+80,Almond Biscotti Thins 150g,2,true,529,12,260,68,false
+81,Classic Salted Potato Chips 400g Party Size,11,true,699,10,360,85,false
+82,Nacho Cheese Tortilla Chips 450g Party Size,6,true,749,10,390,70,false
+83,Honey Roasted Peanuts 600g Tub,2,true,899,8,460,95,false
+84,Assorted Gummy Bears 500g Bulk Bag,20,true,649,12,310,140,false
+85,Dark Chocolate Pretzel Tub 400g,12,true,999,8,520,40,false
+86,Mixed Nut Medley 500g Canister,2,true,1299,5,700,55,false
+87,Mini Salted Pretzels 450g Family Pack,16,true,549,12,260,110,false
+88,Dried Fruit Mix 400g Bag,15,true,849,10,420,65,false
+89,Beef Jerky Variety Pack 5x30g,25,true,1499,5,820,35,false
+90,Rice Cracker Mix 350g Tub,18,true,599,10,290,80,false
+91,Gluten-Free Sea Salt Rice Crisps 100g,1,true,379,15,180,95,false
+92,Keto Cheddar Cheese Puffs 80g,23,true,499,12,260,70,false
+93,Vegan Dark Chocolate Mint Bar 85g,12,true,449,15,220,115,false
+94,Organic Apple Chips Unsweetened 70g,15,true,399,15,190,130,false
+95,Paleo Grain-Free Granola 200g,10,true,799,10,410,48,false
+96,Low Sodium Baked Chips 130g,11,true,349,20,170,160,false
+97,Sugar-Free Gummy Worms 120g,10,true,379,15,180,85,false
+98,High Protein Peanut Butter Bar 60g,2,true,299,30,130,290,false
+99,Plant-Based Smoky Bacon Bits 100g,19,true,429,15,210,62,false
+100,Organic Roasted Chickpeas Sea Salt 110g,10,true,369,20,170,140,false
+101,Spicy Sriracha Potato Chips 150g,11,true,349,20,180,105,false
+102,Habanero Mango Tortilla Chips 180g,24,true,429,15,210,88,false
+103,Jalapeno Cheddar Popcorn 130g,6,true,369,20,170,120,false
+104,Ghost Pepper Peanuts 150g,24,true,499,12,240,65,false
+105,Sweet Chili Rice Crackers 120g,18,true,329,20,150,150,false
+106,Chili Lime Mango Bites 140g,15,true,529,12,260,82,false
+107,Hot & Spicy Beef Stick 40g,25,true,199,40,90,410,false
+108,Wasabi Almonds 150g,2,true,699,10,380,55,false
+109,Spicy Salsa Snack Mix 180g,13,true,399,15,190,115,false
+110,Cajun Seasoned Pretzel Twists 160g,13,true,379,15,180,98,false
+111,Sea Salt Roasted Cashews 150g,2,true,699,12,370,110,false
+112,Honey Roasted Cashews 150g,2,true,729,12,390,92,false
+113,Raw Pecan Halves 140g,2,true,799,10,430,45,false
+114,Roasted Salted Macadamia Nuts 110g,2,true,999,8,550,38,false
+115,Raw Walnut Halves & Pieces 150g,2,true,649,10,340,70,false
+116,Shelled Sunflower Seeds Salted 200g,18,true,299,25,130,240,false
+117,Roasted Pumpkin Seeds Pepitas 180g,18,true,449,15,210,135,false
+118,Toasted Sesame Nut Mix 160g,18,true,499,15,240,85,false
+119,Smoky Barbecue Almonds 150g,2,true,699,10,380,78,false
+120,Chocolate Coated Almonds 160g,12,true,649,12,330,105,false
+121,Creamy Peanut Butter Crunchy Granola 250g,2,true,499,15,230,120,false
+122,Honey Nut Granola Clusters 250g,20,true,479,15,220,140,false
+123,Dark Chocolate Chunks Granola 220g,12,true,549,12,260,95,false
+124,Cranberry Almond Granola Bar 6x30g,15,true,429,20,200,160,false
+125,Chocolate Chip Protein Bar 60g,12,true,299,30,130,320,false
+126,Peanut Butter Crunch Energy Bar 65g,2,true,299,30,130,280,false
+127,Blueberry Oat Chewy Bar 50g,15,true,249,35,110,350,false
+128,Almond Coconut Collagen Bar 50g,2,true,349,20,160,140,false
+129,Salted Caramel Energy Balls 100g,20,true,449,15,210,88,false
+130,Matcha Green Tea Snack Bar 45g,10,true,329,20,150,105,false
+131,Milk Chocolate Peanut Butter Crisp Bar 50g,12,true,199,40,90,450,false
+132,Crispy Caramel Wafer Bar 45g,12,true,179,40,80,380,false
+133,Dark Chocolate Truffle Bites 100g,12,true,499,15,240,115,false
+134,Milk Chocolate Gems Candy Bag 180g,12,true,349,20,160,210,false
+135,Peanut Butter Gems Candy Bag 180g,2,true,349,20,160,190,false
+136,Dark Chocolate Mint Thins 120g,12,true,429,15,200,130,false
+137,Toffee Crisp Milk Chocolate Bar 60g,12,true,219,35,100,260,false
+138,Chocolate Covered Marshmallows 120g,12,true,329,20,150,145,false
+139,White Chocolate Cookies & Cream Bar 90g,12,true,249,30,110,230,false
+140,Hazelnut Praline Squares 110g,12,true,549,12,270,75,false
+141,Sparkling Citrus Soda 355ml,7,true,199,30,80,290,false
+142,Black Cherry Carbonated Drink 355ml,7,true,199,30,80,240,false
+143,Iced Peach Black Tea 473ml,7,true,249,25,110,180,false
+144,Lemon Mint Herbal Cold Tea 473ml,7,true,249,25,110,150,false
+145,Cold Brew Coffee Unsweetened 300ml,1,true,349,20,160,120,false
+146,Vanilla Oat Milk Coffee Latte 300ml,1,true,399,20,190,95,false
+147,Sparkling Coconut Water 330ml,15,true,299,20,130,165,false
+148,Organic Lemonade 473ml,7,true,279,25,120,210,false
+149,Ginger Beer Non-Alcoholic 355ml,13,true,229,30,100,250,false
+150,Berry Antioxidant Fruit Juice 300ml,15,true,329,20,150,135,false
+151,Pita Chips Sea Salt 180g,16,true,399,15,190,140,false
+152,Garlic & Parmesan Pita Chips 180g,16,true,429,15,200,115,false
+153,Multi-Grain Veggie Chips 140g,1,true,379,20,180,160,false
+154,Sweet Potato Chips Sea Salt 140g,11,true,399,15,190,125,false
+155,Cassava Root Crisps Sea Salt 120g,1,true,429,15,210,90,false
+156,Plantain Chips Salted 150g,15,true,329,20,150,210,false
+157,Spicy Garlic Plantain Chips 150g,15,true,349,20,160,175,false
+158,Beet & Carrot Veggie Crisps 100g,1,true,449,15,220,80,false
+159,Crispy Onion Rings Snack 110g,1,true,299,25,130,195,false
+160,Chili Lime Chickpea Crisps 110g,10,true,379,20,180,130,false
+161,Winter Holiday Chocolate Sampler 300g,12,false,1299,8,650,0,true
+162,Valen-Sweet Heart Fudge Box 200g,12,false,899,10,420,0,true
+163,Spring Bunny Marshmallow Treats 150g,20,false,349,20,150,0,true
+164,Spooky Pumpkin Spice Corn Chips 180g,6,false,399,15,180,0,true
+165,Summer Lime Fiesta Tortilla Chips 250g,6,true,449,15,210,120,true
+166,Harvest Apple Cider Caramels 160g,20,true,399,20,180,85,true
+167,Holiday Peppermint Crisp Biscuits 200g,16,false,479,15,220,0,true
+168,Festive Cranberry Pecan Thins 150g,2,false,549,12,260,0,true
+169,New Year Champagne Gummy Bears 150g,20,false,499,15,230,0,true
+170,Autumn Roasted Cinnamon Pumpkin Seeds 150g,18,true,399,20,180,95,true
+171,Toasted Coconut Flakes Sweetened 150g,15,true,329,20,140,160,false
+172,Dried Pineapple Rings 180g,15,true,549,15,270,110,false
+173,Dried Tart Cherries 150g,15,true,699,10,360,75,false
+174,Dried Calimyrna Figs 200g,15,true,649,12,330,60,false
+175,Golden Raisins Jumbo 250g,15,true,349,25,160,220,false
+176,Freeze-Dried Blueberries 40g,15,true,599,12,310,85,false
+177,Freeze-Dried Mango Cubes 45g,15,true,599,12,310,90,false
+178,Sweetened Banana Chips Bulk 300g,15,true,449,15,210,140,false
+179,Pitted Prunes Sun Dried 250g,15,true,399,20,180,180,false
+180,Dried Papaya Spears 180g,15,true,479,15,230,95,false
+181,Chili Garlic Dip Mix 30g,13,true,149,50,60,520,false
+182,French Onion Dip Seasoning 30g,13,true,149,50,60,610,false
+183,Guacamole Seasoning Packet 40g,13,true,169,40,70,480,false
+184,Mild Tomato Salsa Jar 350g,13,true,349,20,160,190,false
+185,Hot Salsa Verde Jar 350g,13,true,349,20,160,145,false
+186,Queso Cheese Dip Jar 300g,23,true,399,20,190,160,false
+187,Spicy Chipotle Mayo Dip 250ml,13,true,379,15,180,110,false
+188,Honey Mustard Snack Dip 250ml,13,true,329,20,150,135,false
+189,Ranch Dip Mix Powder 35g,13,true,149,50,60,580,false
+190,Spicy Roasted Pepper Spread 200g,13,true,429,15,200,85,false
+191,Mini Chocolate Chip Cookie Bags 10x25g,16,true,599,12,290,105,false
+192,Mini Salted Pretzel Multipack 10x20g,16,true,549,12,260,130,false
+193,Variety Potato Chip Bundle 12x28g,11,true,799,10,400,90,false
+194,Fruit Snack Pouch Variety Pack 10x22g,20,true,499,15,230,175,false
+195,Granola Bar Assortment Box 12x30g,15,true,699,10,340,115,false
+196,Gummy Worm Fun Size Bags 12x25g,20,true,449,15,210,140,false
+197,Single Serve Nut & Fruit Mix 8x35g,2,true,749,10,370,85,false
+198,Mini Rice Cake Snack Packs 8x20g,18,true,479,15,220,100,false
+199,Cheese Snack Sticks Pack 10x20g,23,true,529,12,250,110,false
+200,Beef Stick Mini Bites Pouch 10x15g,25,true,899,8,450,70,false

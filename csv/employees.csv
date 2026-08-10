@@ -1,11 +1,11 @@
-EmployeeID,EmployeeName
-1,Marcus Vance
-2,Elena Rostova
-3,David Chen
-4,Sarah Jenkins
-5,Carlos Mendoza
-6,Priya Patel
-7,James Sterling
-8,Amara Okafor
-9,Robert Hayes
-10,Lisa Takahashi
+EmployeeID,EmployeeName,EmployeeTier
+1,Marcus Vance,1
+2,Elena Rostova,1
+3,David Chen,1
+4,Sarah Jenkins,1
+5,Carlos Mendoza,1
+6,Priya Patel,2
+7,James Sterling,2
+8,Amara Okafor,2
+9,Robert Hayes,3
+10,Lisa Takahashi,3

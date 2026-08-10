@@ -35,7 +35,7 @@ CREATE TABLE Users (
 -- Create Employees table with attributes and constraints
 CREATE TABLE Employees (
     EmployeeID INT PRIMARY KEY,
-    EmployeeName VARCHAR(100)
+    EmployeeName VARCHAR(100),
 
     EmployeeTier INT NOT NULL,
 

@@ -36,6 +36,10 @@ CREATE TABLE Users (
 CREATE TABLE Employees (
     EmployeeID INT PRIMARY KEY,
     EmployeeName VARCHAR(100)
+
+    EmployeeTier INT NOT NULL,
+
+    CHECK (EmployeeTier BETWEEN 1 AND 3)
 );
 
 -- Create Products table with attributes and constraints

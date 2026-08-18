@@ -68,6 +68,19 @@ CREATE TABLE Products (
         REFERENCES Suppliers(SupplierID)
 );
 
+-- SeasonalProducts is a subtype of Products.
+-- A seasonal product must already exist in Products.
+CREATE TABLE SeasonalProducts (
+    ProductID  INT PRIMARY KEY,
+    StartMonth INT NOT NULL,
+    EndMonth   INT NOT NULL,
+
+    FOREIGN KEY (ProductID)
+        REFERENCES Products (ProductID),
+    CHECK (StartMonth BETWEEN 1 AND 12),
+    CHECK (EndMonth BETWEEN 1 AND 12)
+);
+
 -- Create the Transactions table with attributes and constraints
 CREATE TABLE Transactions (
     TransactionID INT PRIMARY KEY,

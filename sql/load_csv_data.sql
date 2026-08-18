@@ -24,6 +24,13 @@ FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 
+LOAD DATA INFILE '../csv/seasonal_products.csv'
+INTO TABLE SeasonalProducts
+FIELDS TERMINATED BY ','
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS
+(ProductID, StartMonth, EndMonth);
+
 LOAD DATA INFILE '../csv/transactions.csv' 
 INTO TABLE Transactions
 FIELDS TERMINATED BY ',' 
